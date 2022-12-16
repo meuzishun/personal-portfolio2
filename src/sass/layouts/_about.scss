@@ -1,0 +1,101 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../components/' as *;
+
+// mobile
+.main-header {
+  display: grid;
+  // overflow: hidden;
+  grid-gap: 1rem;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'top'
+    'about'
+    'links'
+    'skills';
+  margin: 0;
+
+  .top {
+    grid-area: top;
+    overflow: initial;
+    min-height: 15rem;
+    min-width: 15rem;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.128),
+        rgba(255, 255, 255, 0.432)
+      ),
+      url('../assets/images/headshot.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 5%;
+    // background-position: 10% 5%;
+  }
+
+  .about {
+    padding: 0.5rem;
+    @include set-background($lightBackgroundColor);
+    width: 100%;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    grid-area: links;
+    justify-content: right;
+    align-items: flex-end;
+  }
+
+  .icon-container {
+    overflow: hidden;
+    grid-area: skills;
+
+    .tech-icons {
+      width: 200%;
+      display: flex;
+      justify-content: space-around;
+      animation: icon-carousel 10s linear infinite;
+    }
+  }
+
+  @keyframes icon-carousel {
+    0% {
+      // margin-left: 0px;
+      transform: translateX(0);
+    }
+    100% {
+      // margin-left: -100%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (min-width: $mediumBreakpoint) {
+  .main-header {
+    margin: 1vw;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      'top'
+      'about'
+      'links'
+      'skills';
+
+    .top {
+      background-position: 90% 5%;
+    }
+  }
+}
+
+@media (min-width: $largeBreakpoint) {
+  .main-header {
+    margin: 1rem;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+      'top about'
+      'top links'
+      'skills skills';
+  }
+}

@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.main-content {
+  background-color: $mainBackground;
+  flex: 1;
+  margin: 0 0;
+}
+
+@media (min-width: $mediumBreakpoint) {
+  .main-content {
+    margin: 0 1vw;
+  }
+}
+
+@media (min-width: $largeBreakpoint) {
+  .main-content {
+    margin: 0 1rem;
+  }
+}

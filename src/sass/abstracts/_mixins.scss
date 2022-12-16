@@ -1,0 +1,12 @@
+@use './functions' as *;
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+  svg path {
+    fill: set-text-color($color);
+  }
+  svg path + path {
+    fill: $color;
+  }
+}

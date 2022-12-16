@@ -1,0 +1,9 @@
+@use './colors' as *;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $darkFontColor;
+  } @else {
+    @return $lightFontColor;
+  }
+}

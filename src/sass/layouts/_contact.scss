@@ -1,0 +1,62 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+@use '../components/' as *;
+
+.main-footer {
+  // @include set-background($darkBackgroundColor);
+  background-image: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.79),
+      rgb(255, 255, 255, 1)
+    ),
+    url('../assets/images/card.jpg');
+  background-size: cover;
+  background-position: 25% 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0.5rem;
+
+  .email-container {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid $darkBackgroundColor;
+    border-radius: 5000px;
+    align-self: center;
+
+    a {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      color: inherit;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: $mediumBreakpoint) {
+  .main-footer {
+    margin: 1vw;
+
+    .email-container {
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: $largeBreakpoint) {
+  .main-footer {
+    margin: 1rem;
+
+    .email-container {
+      align-self: flex-start;
+    }
+  }
+}

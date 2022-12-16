@@ -1,0 +1,11 @@
+.wrapper {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  // & > * {
+  //   outline: 1px solid grey;
+  // }
+}
