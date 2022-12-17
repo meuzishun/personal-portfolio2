@@ -1,6 +1,7 @@
 import emailIconFile from '../../assets/icons/contact/email-outline.svg';
 
-const emailContainer = document.querySelector('.email-container');
+const emailContainer = document.createElement('div');
+emailContainer.classList.add('email-container');
 
 const link = document.createElement('a');
 link.href = 'mailto:meuzishun@gmail.com';
@@ -16,3 +17,5 @@ emailText.textContent = 'meuzishun@gmail.com';
 link.appendChild(emailIcon);
 link.appendChild(emailText);
 emailContainer.appendChild(link);
+
+export { emailContainer };

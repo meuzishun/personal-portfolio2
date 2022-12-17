@@ -4,7 +4,8 @@ import twitterIconFile from '../../assets/icons/contact/twitter-original.svg';
 
 const contactIcons = [githubIconFile, linkedinIconFile, twitterIconFile];
 
-const linksContainer = document.querySelector('.links');
+const linksContainer = document.createElement('div');
+linksContainer.classList.add('links');
 
 contactIcons.forEach((file) => {
   const icon = document.createElement('object');
@@ -13,3 +14,5 @@ contactIcons.forEach((file) => {
   icon.data = file;
   linksContainer.appendChild(icon);
 });
+
+export { linksContainer };
