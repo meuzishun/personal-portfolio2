@@ -1,6 +1,6 @@
-import githubIconFile from '../assets/icons/contact/github-original.svg';
-import linkedinIconFile from '../assets/icons/contact/linkedin-original.svg';
-import twitterIconFile from '../assets/icons/contact/twitter-original.svg';
+import githubIconFile from '../../assets/icons/contact/github-original.svg';
+import linkedinIconFile from '../../assets/icons/contact/linkedin-original.svg';
+import twitterIconFile from '../../assets/icons/contact/twitter-original.svg';
 
 const contactIcons = [githubIconFile, linkedinIconFile, twitterIconFile];
 

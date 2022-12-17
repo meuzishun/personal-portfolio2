@@ -1,4 +1,4 @@
 import '../sass/style.scss';
-import './tech-icons';
-import './email';
-import './contact-icons';
+import './components/tech-icons';
+import './components/email';
+import './components/contact-icons';

@@ -1,4 +1,4 @@
-import emailIconFile from '../assets/icons/contact/email-outline.svg';
+import emailIconFile from '../../assets/icons/contact/email-outline.svg';
 
 const emailContainer = document.querySelector('.email-container');
 
