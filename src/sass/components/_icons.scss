@@ -9,3 +9,7 @@
     height: clamp(2rem, 5vw, 6rem);
   }
 }
+
+object {
+  pointer-events: none;
+}
