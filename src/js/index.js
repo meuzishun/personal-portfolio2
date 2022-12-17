@@ -1,8 +1,4 @@
 import '../sass/style.scss';
-import './components/tech-icons';
-import './components/email';
-import './components/contact-icons';
-
 import { mainHeader } from './sections/header';
 import { mainContent } from './sections/main';
 import { mainFooter } from './sections/footer';
