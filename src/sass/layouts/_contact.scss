@@ -20,17 +20,20 @@
   padding: 0.5rem;
 
   .email-container {
-    margin: 1.5rem 0;
-    padding: 0.5rem 1rem;
-    border: 1px solid $darkBackgroundColor;
-    border-radius: 5000px;
-    align-self: center;
-
     a {
       display: flex;
       gap: 0.5rem;
       align-items: center;
       color: inherit;
+      margin: 1.5rem 0;
+      padding: 0.5rem 1rem;
+      border: 1px solid $darkBackgroundColor;
+      border-radius: 5000px;
+      align-self: center;
+
+      .svg {
+        width: 2rem;
+      }
     }
   }
 
