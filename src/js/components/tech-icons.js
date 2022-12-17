@@ -20,25 +20,27 @@ const techIconsFile = [
   jestIconFile,
 ];
 
-const iconsContainer = document.querySelector('.icons-container');
+const iconsContainer = document.createElement('div');
+iconsContainer.classList.add('icons-container');
+
 const icons = document.createElement('div');
 icons.classList.add('tech-icons');
-
-techIconsFile.forEach((file) => {
-  const icon = document.createElement('object');
-  icon.classList.add('icon');
-  icon.type = 'image/svg+xml';
-  icon.data = file;
-  icons.appendChild(icon);
-});
-
-techIconsFile.forEach((file) => {
-  const icon = document.createElement('object');
-  icon.classList.add('icon');
-  icon.type = 'image/svg+xml';
-  icon.data = file;
-  icons.appendChild(icon);
-});
-
-console.log(icons);
 iconsContainer.appendChild(icons);
+
+techIconsFile.forEach((file) => {
+  const icon = document.createElement('object');
+  icon.classList.add('icon');
+  icon.type = 'image/svg+xml';
+  icon.data = file;
+  icons.appendChild(icon);
+});
+
+techIconsFile.forEach((file) => {
+  const icon = document.createElement('object');
+  icon.classList.add('icon');
+  icon.type = 'image/svg+xml';
+  icon.data = file;
+  icons.appendChild(icon);
+});
+
+export { iconsContainer };
