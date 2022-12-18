@@ -4,50 +4,47 @@
 
 // mobile
 .main-header {
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.128),
+      rgba(255, 255, 255, 0.432)
+    ),
+    url('../assets/images/headshot.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% center;
+
   display: grid;
   // overflow: hidden;
   grid-gap: 1rem;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto min-content min-content;
   grid-template-columns: auto;
   grid-template-areas:
     'top'
     'about'
-    'links'
     'skills';
+  align-content: space-between;
   margin: 0;
 
   .top {
     grid-area: top;
     overflow: initial;
-    min-height: 15rem;
-    min-width: 15rem;
-    background-image: radial-gradient(
-        rgba(255, 255, 255, 0.128),
-        rgba(255, 255, 255, 0.432)
-      ),
-      url('../assets/images/headshot.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 5% 5%;
+    // align-self: start;
+    // min-height: 15rem;
+    // min-width: 15rem;
+
     // background-position: 10% 5%;
   }
 
   .about {
     padding: 0.5rem;
-    @include set-background($lightBackgroundColor);
+    margin-top: 15rem;
+    // @include set-background($lightBackgroundColor);
+    background-color: rgba(255, 255, 255, 0.755);
     width: 100%;
   }
 
-  .links {
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem;
-    grid-area: links;
-    justify-content: right;
-    align-items: flex-end;
-  }
-
   .icons-container {
+    margin-bottom: 2rem;
     overflow: hidden;
     grid-area: skills;
 
@@ -73,13 +70,12 @@
 
 @media (min-width: $mediumBreakpoint) {
   .main-header {
-    margin: 1vw;
+    // margin: 1vw;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto;
     grid-template-areas:
       'top'
       'about'
-      'links'
       'skills';
 
     .top {
@@ -90,12 +86,12 @@
 
 @media (min-width: $largeBreakpoint) {
   .main-header {
-    margin: 1rem;
-    grid-template-rows: min-content min-content;
-    grid-template-columns: auto auto;
+    // margin: 1rem;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: auto;
     grid-template-areas:
-      'top about'
-      'top links'
-      'skills skills';
+      'top'
+      'about'
+      'skills';
   }
 }
