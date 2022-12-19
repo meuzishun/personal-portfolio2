@@ -27,20 +27,12 @@ const icons = document.createElement('div');
 icons.classList.add('tech-icons');
 iconsContainer.appendChild(icons);
 
-techIconsFile.forEach((file) => {
+for (let i = 0, l = techIconsFile.length * 2; i < l; i++) {
   const icon = document.createElement('object');
   icon.classList.add('icon');
   icon.type = 'image/svg+xml';
-  icon.data = file;
+  icon.data = techIconsFile[i % techIconsFile.length];
   icons.appendChild(icon);
-});
-
-techIconsFile.forEach((file) => {
-  const icon = document.createElement('object');
-  icon.classList.add('icon');
-  icon.type = 'image/svg+xml';
-  icon.data = file;
-  icons.appendChild(icon);
-});
+}
 
 export { iconsContainer };
