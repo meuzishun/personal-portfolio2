@@ -34,30 +34,34 @@
 
     a {
       background-color: rgba(0, 132, 255, 0.811);
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.55);
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      color: inherit;
+      // color: inherit;
       margin: 1.5rem 0;
       padding: 0.5rem 1rem;
       // border: 1px solid $darkBackgroundColor;
       border-radius: 5000px;
       align-self: center;
+      transition: all 200ms ease-in-out;
 
-      & > * {
-        color: white;
+      &:hover {
+        transform: scale(1.025);
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.45);
       }
 
-      object {
-        color: white;
-
-        svg {
-          color: white;
-        }
+      &:active {
+        transform: scale(0.975);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
       }
 
       .svg {
-        width: 2rem;
+        width: 1.75rem;
+      }
+
+      p {
+        color: white;
       }
     }
   }
