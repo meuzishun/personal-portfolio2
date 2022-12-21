@@ -2,48 +2,39 @@
 @use '../base' as *;
 @use '../components/' as *;
 
-// mobile
+//* mobile
 .main-header {
-  background-image: radial-gradient(
-      rgba(255, 255, 255, 0.128),
-      rgba(255, 255, 255, 0.432)
-    ),
-    url('../assets/images/headshot.jpg');
+  background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)),
+    url('../assets/images/desk-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 40% center;
+  background-position: 46% 80%;
 
   display: grid;
-  // overflow: hidden;
-  grid-gap: 2rem;
-  grid-template-rows: 1fr min-content min-content;
+  // grid-gap: 2rem;
+  grid-template-rows: min-content min-content 1fr;
   grid-template-columns: auto;
   grid-template-areas:
     'top'
     'about'
     'skills';
   align-content: space-between;
-  margin: 0;
 
   .top {
     grid-area: top;
     overflow: initial;
-    // align-self: start;
-    // min-height: 15rem;
-    // min-width: 15rem;
-
-    // background-position: 10% 5%;
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.509));
   }
 
   .about {
     padding: 1rem;
-    // margin-top: 15rem;
-    // @include set-background($lightBackgroundColor);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
     width: 100%;
   }
 
   .icons-container {
+    align-self: end;
     margin-bottom: clamp(1rem, 1vh, 2rem);
     overflow: hidden;
     grid-area: skills;
