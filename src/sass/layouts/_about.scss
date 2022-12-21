@@ -24,6 +24,18 @@
     grid-area: top;
     overflow: initial;
     background-image: linear-gradient(#000, rgba(0, 0, 0, 0.509));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .about {

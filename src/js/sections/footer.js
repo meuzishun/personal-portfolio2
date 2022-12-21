@@ -3,6 +3,7 @@ import { linksContainer } from '../components/contact-icons.js';
 
 const mainFooter = document.createElement('footer');
 mainFooter.classList.add('main-footer');
+mainFooter.id = 'contact';
 
 const callToAction = document.createElement('div');
 callToAction.classList.add('call-to-action');
