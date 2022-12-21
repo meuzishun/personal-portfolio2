@@ -58,11 +58,9 @@
 
   @keyframes icon-carousel {
     0% {
-      // margin-left: 0px;
       transform: translateX(0);
     }
     100% {
-      // margin-left: -100%;
       transform: translateX(-50%);
     }
   }
