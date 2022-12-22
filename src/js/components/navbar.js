@@ -8,6 +8,10 @@ navbar.appendChild(links);
 const aboutLink = document.createElement('p');
 aboutLink.textContent = 'About';
 //TODO this will be a dropdown?
+aboutLink.addEventListener('click', () => {
+  const about = document.querySelector('.about');
+  about.classList.toggle('hidden');
+});
 links.appendChild(aboutLink);
 
 const portfolioLink = document.createElement('a');

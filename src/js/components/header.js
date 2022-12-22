@@ -1,4 +1,5 @@
 import { navbar } from './navbar.js';
+import { about } from './about.js';
 
 const header = document.createElement('header');
 header.classList.add('main-header');
@@ -12,5 +13,6 @@ heading1.textContent = 'Andrew Smith';
 link.appendChild(heading1);
 
 header.appendChild(navbar);
+header.appendChild(about);
 
 export { header };

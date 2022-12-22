@@ -23,13 +23,6 @@
   flex-direction: column;
   justify-content: flex-end;
 
-  .about {
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    width: 100%;
-  }
-
   .icons-container {
     // align-self: end;
     margin-bottom: clamp(1rem, 1vh, 2rem);

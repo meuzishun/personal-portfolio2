@@ -1,5 +1,6 @@
 const about = document.createElement('div');
 about.classList.add('about');
+about.classList.add('hidden');
 
 const heading2 = document.createElement('h2');
 heading2.textContent = 'About me';
