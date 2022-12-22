@@ -3,6 +3,7 @@
 @use '../components/' as *;
 
 .main-footer {
+  min-height: 100vh;
   background-image: radial-gradient(
       circle at center,
       rgba(255, 255, 255, 0.9),
@@ -16,10 +17,14 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0.5rem;
+  padding: 5rem 0.5rem 0.5rem 0.5rem;
 
   .call-to-action {
     padding: 1rem 1rem 0 1rem;
+
+    h2 {
+      // font-size: 3rem;
+    }
 
     p {
       padding: 0;

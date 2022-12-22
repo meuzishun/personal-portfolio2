@@ -4,14 +4,14 @@ h1 {
   font-family: $fontStack1;
   font-weight: 300;
   color: $lightFontColor;
-  font-size: clamp(3rem, 5vw, 4rem);
-  padding: 0.25rem 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  // padding: 0.25rem 2rem;
 }
 
 h2 {
   font-family: $fontStack1;
   font-weight: 300;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 p {

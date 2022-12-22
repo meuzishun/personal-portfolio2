@@ -1,0 +1,17 @@
+.navbar {
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+
+    a,
+    p {
+      cursor: pointer;
+      color: #fff;
+      font-size: 1.2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

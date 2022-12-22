@@ -3,40 +3,25 @@
 @use '../components/' as *;
 
 //* mobile
-.main-header {
+.welcome-section {
+  min-height: 100vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)),
     url('../assets/images/desk-image.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 46% 80%;
 
-  display: grid;
-  // grid-gap: 2rem;
-  grid-template-rows: min-content min-content 1fr;
-  grid-template-columns: auto;
-  grid-template-areas:
-    'top'
-    'about'
-    'skills';
-  align-content: space-between;
-
-  .top {
-    grid-area: top;
-    overflow: initial;
-    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.509));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-
-    a {
-      color: #fff;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+  // display: grid;
+  // grid-template-rows: min-content min-content 1fr;
+  // grid-template-columns: auto;
+  // grid-template-areas:
+  //   'top'
+  //   'about'
+  //   'skills';
+  // align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   .about {
     padding: 1rem;
@@ -46,7 +31,7 @@
   }
 
   .icons-container {
-    align-self: end;
+    // align-self: end;
     margin-bottom: clamp(1rem, 1vh, 2rem);
     overflow: hidden;
     grid-area: skills;
