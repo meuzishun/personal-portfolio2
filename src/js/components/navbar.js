@@ -7,10 +7,33 @@ navbar.appendChild(links);
 
 const aboutLink = document.createElement('p');
 aboutLink.textContent = 'About';
-//TODO this will be a dropdown?
+
+const handleOpen = (e) => {
+  const about = e.target;
+  about.removeEventListener('animationend', handleOpen);
+  about.classList.remove('showing');
+  about.classList.add('visible');
+};
+
+const handleClose = (e) => {
+  const about = e.target;
+  about.removeEventListener('animationend', handleClose);
+  about.classList.remove('hiding');
+  about.classList.add('hidden');
+};
+
 aboutLink.addEventListener('click', () => {
   const about = document.querySelector('.about');
-  about.classList.toggle('hidden');
+  if (about.classList.contains('hidden')) {
+    about.classList.remove('hidden');
+    about.classList.add('showing');
+    about.addEventListener('animationend', handleOpen);
+  }
+  if (about.classList.contains('visible')) {
+    about.classList.remove('visible');
+    about.classList.add('hiding');
+    about.addEventListener('animationend', handleClose);
+  }
 });
 links.appendChild(aboutLink);
 
