@@ -16,7 +16,8 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(100px);
+    // transform: translateY(100px);
+    transform: translateY(0px);
   }
 }
 
@@ -27,7 +28,8 @@
 
 .visible {
   display: block;
-  transform: translateY(100px);
+  // transform: translateY(100px);
+  transform: translateY(0px);
 }
 
 .hiding {
