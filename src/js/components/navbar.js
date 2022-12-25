@@ -1,6 +1,14 @@
 const navbar = document.createElement('nav');
 navbar.classList.add('navbar');
 
+const link = document.createElement('a');
+link.href = '#top';
+navbar.appendChild(link);
+
+const heading1 = document.createElement('h1');
+heading1.textContent = 'Andrew Smith';
+link.appendChild(heading1);
+
 const links = document.createElement('ul');
 links.classList.add('nav-links');
 navbar.appendChild(links);
