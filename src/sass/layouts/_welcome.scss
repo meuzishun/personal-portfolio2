@@ -11,14 +11,6 @@
   background-repeat: no-repeat;
   background-position: 46% 80%;
 
-  // display: grid;
-  // grid-template-rows: min-content min-content 1fr;
-  // grid-template-columns: auto;
-  // grid-template-areas:
-  //   'top'
-  //   'about'
-  //   'skills';
-  // align-content: space-between;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -48,8 +40,6 @@
 
 @media (min-width: $mediumBreakpoint) {
   .main-header {
-    // margin: 1vw;
-    // grid-template-rows: auto auto auto;
     grid-template-columns: auto;
     grid-template-areas:
       'top'
@@ -64,8 +54,6 @@
 
 @media (min-width: $largeBreakpoint) {
   .main-header {
-    // margin: 1rem;
-    // grid-template-rows: min-content min-content min-content;
     grid-template-columns: auto;
     grid-template-areas:
       'top'
