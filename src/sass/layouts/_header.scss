@@ -1,10 +1,12 @@
+@use '../abstracts/fonts' as *;
+
 .main-header {
-  // grid-area: top;
   position: fixed;
   top: 0;
   height: min-content;
-  width: 100vw;
-  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 1440px;
+  padding: $headerTopBottomPadding $headerSidePadding;
   overflow: initial;
   background-image: linear-gradient(#000, rgba(0, 0, 0, 0.5));
   display: flex;
@@ -12,39 +14,4 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-
-  // .about {
-  //   padding: 1rem;
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
-  //   color: #fff;
-  //   width: 100%;
-  // }
-
-  // @keyframes showAbout {
-  //   0% {
-  //     opacity: 0;
-  //     transform: translateY(-100%);
-  //   }
-  //   100% {
-  //     opacity: 1;
-  //     transform: translateY(0%);
-  //   }
-  // }
-
-  // .showing {
-  //   display: block;
-  //   animation: showAbout 500ms ease-in-out 0ms 1 forwards;
-  // }
-
-  // .visible {
-  //   display: block;
-  // }
-
-  // .hiding {
-  //   animation: showAbout 500ms ease-in-out 0ms 1 reverse;
-  // }
-
-  // .hidden {
-  //   display: none;
-  // }
 }

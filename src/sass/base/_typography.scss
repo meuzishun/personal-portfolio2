@@ -4,19 +4,19 @@ h1 {
   font-family: $fontStack1;
   font-weight: 300;
   color: $lightFontColor;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: $heading1Size;
   // padding: 0.25rem 2rem;
 }
 
 h2 {
   font-family: $fontStack1;
   font-weight: 300;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: $heading2Size;
 }
 
 p {
   font-family: $fontStack2;
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: $paraSize;
 }
 
 a {

@@ -3,3 +3,9 @@
 
 $fontStack1: 'Roboto', 'Arial', sans-serif;
 $fontStack2: 'Lato', 'Helvetica', sans-serif;
+$heading1Size: clamp(2rem, 4vw, 3rem);
+$heading2Size: clamp(1.5rem, 3vw, 2.5rem);
+$paraSize: clamp(1rem, 3vw, 1.5rem);
+
+$headerSidePadding: 2rem;
+$headerTopBottomPadding: 1rem;
