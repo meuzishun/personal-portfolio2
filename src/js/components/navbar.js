@@ -13,6 +13,11 @@ const links = document.createElement('ul');
 links.classList.add('nav-links');
 navbar.appendChild(links);
 
+const homeLink = document.createElement('a');
+homeLink.href = '#top';
+homeLink.textContent = 'Home';
+links.appendChild(homeLink);
+
 const aboutLink = document.createElement('p');
 aboutLink.textContent = 'About';
 
