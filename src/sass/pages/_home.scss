@@ -12,6 +12,7 @@
   .main-footer {
     padding-top: var(--navbar_height);
     padding-bottom: var(--navbar_height);
+    scroll-snap-align: start;
   }
 }
 
