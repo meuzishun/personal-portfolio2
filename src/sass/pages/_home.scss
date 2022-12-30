@@ -1,6 +1,27 @@
+@use '../abstracts' as *;
+
 .wrapper {
   position: relative;
   min-height: 100vh;
-  max-width: 1440px;
+  max-width: var(--page_width);
   margin: 0 auto;
+
+  //* mobile
+  .welcome-section,
+  .main-content,
+  .main-footer {
+    padding-top: var(--navbar_height);
+    padding-bottom: var(--navbar_height);
+  }
+}
+
+//* laptop
+@media (min-width: $mediumBreakpoint) {
+  .wrapper {
+    .welcome-section,
+    .main-content,
+    .main-footer {
+      padding-bottom: 0;
+    }
+  }
 }

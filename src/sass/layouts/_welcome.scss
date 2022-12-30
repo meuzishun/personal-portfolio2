@@ -2,7 +2,6 @@
 @use '../base' as *;
 @use '../components/' as *;
 
-//* mobile
 .welcome-section {
   min-height: 100vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)),
@@ -11,14 +10,8 @@
   background-repeat: no-repeat;
   background-position: 46% 80%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-
   .icons-container {
-    margin-bottom: clamp(1rem, 1vh, 2rem);
     overflow: hidden;
-    grid-area: skills;
 
     .tech-icons {
       width: 200%;
@@ -35,29 +28,5 @@
     100% {
       transform: translateX(-50%);
     }
-  }
-}
-
-@media (min-width: $mediumBreakpoint) {
-  .main-header {
-    grid-template-columns: auto;
-    grid-template-areas:
-      'top'
-      'about'
-      'skills';
-
-    .top {
-      background-position: 90% 5%;
-    }
-  }
-}
-
-@media (min-width: $largeBreakpoint) {
-  .main-header {
-    grid-template-columns: auto;
-    grid-template-areas:
-      'top'
-      'about'
-      'skills';
   }
 }

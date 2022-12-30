@@ -1,11 +1,11 @@
 @use '../abstracts/' as *;
 
 .about {
-  position: absolute;
-  padding: 0rem 3rem 2rem;
+  padding: 1rem 3rem 2rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
   color: #fff;
   width: 100%;
+  z-index: 1;
 }
 
 @keyframes showAbout {
@@ -15,7 +15,7 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(50%);
   }
 }
 
@@ -26,7 +26,7 @@
 
 .visible {
   display: block;
-  transform: translateY(0px);
+  transform: translateY(50%);
 }
 
 .hiding {

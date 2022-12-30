@@ -1,63 +1,94 @@
+import { about } from './about';
+
+//* Container
 const navbar = document.createElement('nav');
 navbar.classList.add('navbar');
 
-const link = document.createElement('a');
-link.href = '#top';
-navbar.appendChild(link);
-
+//* Heading
+const topLink = document.createElement('a');
+topLink.href = '#top';
 const heading1 = document.createElement('h1');
 heading1.textContent = 'Andrew Smith';
-link.appendChild(heading1);
+topLink.appendChild(heading1);
+navbar.appendChild(topLink);
 
+//* Links
 const links = document.createElement('ul');
 links.classList.add('nav-links');
 navbar.appendChild(links);
 
+//* Home
+const homeListItem = document.createElement('li');
 const homeLink = document.createElement('a');
 homeLink.href = '#top';
 homeLink.textContent = 'Home';
-links.appendChild(homeLink);
+homeListItem.appendChild(homeLink);
+links.appendChild(homeListItem);
 
-const aboutLink = document.createElement('p');
+//* About
+const aboutListItem = document.createElement('li');
+const aboutLink = document.createElement('a');
+aboutLink.href = '#top';
 aboutLink.textContent = 'About';
 
-const handleOpen = (e) => {
-  const about = e.target;
-  about.removeEventListener('animationend', handleOpen);
+const handleAboutOpen = () => {
+  about.removeEventListener('animationend', handleAboutOpen);
   about.classList.remove('showing');
   about.classList.add('visible');
 };
 
-const handleClose = (e) => {
-  const about = e.target;
-  about.removeEventListener('animationend', handleClose);
+const handleAboutClose = () => {
+  about.removeEventListener('animationend', handleAboutClose);
   about.classList.remove('hiding');
   about.classList.add('hidden');
 };
 
+const startAboutOpen = () => {
+  about.classList.remove('hidden');
+  about.classList.add('showing');
+  about.addEventListener('animationend', handleAboutOpen);
+};
+
+const startAboutClose = () => {
+  about.classList.remove('visible');
+  about.classList.add('hiding');
+  about.addEventListener('animationend', handleAboutClose);
+};
+
 aboutLink.addEventListener('click', () => {
-  const about = document.querySelector('.about');
   if (about.classList.contains('hidden')) {
-    about.classList.remove('hidden');
-    about.classList.add('showing');
-    about.addEventListener('animationend', handleOpen);
+    startAboutOpen(about);
   }
   if (about.classList.contains('visible')) {
-    about.classList.remove('visible');
-    about.classList.add('hiding');
-    about.addEventListener('animationend', handleClose);
+    startAboutClose(about);
   }
 });
-links.appendChild(aboutLink);
 
+aboutListItem.appendChild(aboutLink);
+links.appendChild(aboutListItem);
+
+//* Portfolio
+const portfolioListItem = document.createElement('li');
 const portfolioLink = document.createElement('a');
 portfolioLink.href = '#portfolio';
 portfolioLink.textContent = 'Portfolio';
-links.appendChild(portfolioLink);
+portfolioListItem.appendChild(portfolioLink);
+links.appendChild(portfolioListItem);
 
+//* Contact
+const contactListItem = document.createElement('li');
 const contactLink = document.createElement('a');
 contactLink.href = '#contact';
 contactLink.textContent = 'Contact';
-links.appendChild(contactLink);
+contactListItem.appendChild(contactLink);
+links.appendChild(contactListItem);
+
+[...links.children].forEach((child) => {
+  child.addEventListener('click', () => {
+    if (about.classList.contains('visible')) {
+      startAboutClose(about);
+    }
+  });
+});
 
 export { navbar };
