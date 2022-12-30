@@ -1,5 +1,23 @@
 @use '../abstracts' as *;
 
+:root {
+  --navbar_height: 0;
+  --header_height: 0;
+  --page_width: 1440px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  font-size: 16px;
+  font-family: $fontStack2;
+  color: inherit;
+  background-color: #000;
+}
+
 .wrapper {
   position: relative;
   min-height: 100vh;
