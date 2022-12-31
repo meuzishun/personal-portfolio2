@@ -1,9 +1,9 @@
 import { emailContainer } from '../components/email.js';
 import { linksContainer } from '../components/contact-icons.js';
 
-const mainFooter = document.createElement('footer');
-mainFooter.classList.add('main-footer');
-mainFooter.id = 'contact';
+const contact = document.createElement('section');
+contact.classList.add('contact');
+contact.id = 'contact';
 
 const callToAction = document.createElement('div');
 callToAction.classList.add('call-to-action');
@@ -18,8 +18,8 @@ blurb.textContent =
   'If you enjoy my work and would like to discuss potentially working together, please feel free to contact me.';
 callToAction.appendChild(blurb);
 
-mainFooter.appendChild(callToAction);
-mainFooter.appendChild(emailContainer);
-mainFooter.appendChild(linksContainer);
+contact.appendChild(callToAction);
+contact.appendChild(emailContainer);
+contact.appendChild(linksContainer);
 
-export { mainFooter };
+export { contact };

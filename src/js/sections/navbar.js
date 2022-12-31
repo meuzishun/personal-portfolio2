@@ -1,16 +1,8 @@
-import { about } from './about';
+import { about } from '../components/about';
 
 //* Container
 const navbar = document.createElement('nav');
 navbar.classList.add('navbar');
-
-//* Heading
-const topLink = document.createElement('a');
-topLink.href = '#top';
-const heading1 = document.createElement('h1');
-heading1.textContent = 'Andrew Smith';
-topLink.appendChild(heading1);
-navbar.appendChild(topLink);
 
 //* Links
 const links = document.createElement('ul');
