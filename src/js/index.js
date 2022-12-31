@@ -1,3 +1,4 @@
+import '../sass/style.scss';
 import { homeWrapper } from './pages/home';
 
 document.body.appendChild(homeWrapper);

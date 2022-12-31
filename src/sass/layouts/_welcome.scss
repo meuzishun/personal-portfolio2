@@ -2,7 +2,7 @@
 @use '../base' as *;
 @use '../components/' as *;
 
-.welcome-section {
+.welcome {
   min-height: 100vh;
   background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)),
     url('../assets/images/desk-image.jpg');

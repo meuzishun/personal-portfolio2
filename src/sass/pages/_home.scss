@@ -8,7 +8,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
 }
 
 body {
@@ -18,28 +18,28 @@ body {
   background-color: #000;
 }
 
-.wrapper {
+.home-wrapper {
   position: relative;
   min-height: 100vh;
   max-width: var(--page_width);
   margin: 0 auto;
 
   //* mobile
-  .welcome-section,
-  .main-content,
-  .main-footer {
+  .welcome,
+  .portfolio,
+  .contact {
     padding-top: var(--navbar_height);
     padding-bottom: var(--navbar_height);
-    scroll-snap-align: start;
+    // scroll-snap-align: start;
   }
 }
 
 //* laptop
 @media (min-width: $mediumBreakpoint) {
-  .wrapper {
-    .welcome-section,
-    .main-content,
-    .main-footer {
+  .home-wrapper {
+    .welcome,
+    .portfolio,
+    .contact {
       padding-bottom: 0;
     }
   }
