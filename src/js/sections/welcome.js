@@ -1,10 +1,10 @@
 import { iconsContainer } from '../components/tech-icons.js';
 import { about } from '../components/about.js';
 
-const welcomeSection = document.createElement('section');
-welcomeSection.classList.add('welcome-section');
-welcomeSection.id = 'top';
-welcomeSection.appendChild(iconsContainer);
-welcomeSection.appendChild(about);
+const welcome = document.createElement('section');
+welcome.classList.add('welcome');
+welcome.id = 'welcome';
+welcome.appendChild(iconsContainer);
+welcome.appendChild(about);
 
-export { welcomeSection };
+export { welcome };

@@ -1,0 +1,35 @@
+@use '../abstracts' as *;
+@use '../pages' as *;
+.navbar {
+  .nav-links {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000);
+
+    li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+      a {
+        cursor: pointer;
+        user-select: none;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+@media (min-width: $mediumBreakpoint) {
+  .navbar {
+    margin-right: 2rem;
+  }
+}

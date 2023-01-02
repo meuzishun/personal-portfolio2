@@ -1,15 +1,7 @@
 @use '../abstracts' as *;
 
 :root {
-  --navbar_height: 0;
-  --header_height: 0;
   --page_width: 1440px;
-}
-
-html {
-  height: 100%;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -19,29 +11,54 @@ body {
   background-color: #000;
 }
 
-.wrapper {
-  position: relative;
-  min-height: 100vh;
+.home-wrapper {
+  height: 100vh;
   max-width: var(--page_width);
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'header' 'main' 'navbar';
 
-  //* mobile
-  .welcome-section,
-  .main-content,
-  .main-footer {
-    padding-top: var(--navbar_height);
-    padding-bottom: var(--navbar_height);
-    scroll-snap-align: start;
+  .header {
+    grid-area: header;
+  }
+
+  .navbar {
+    grid-area: navbar;
+  }
+
+  .main-container {
+    grid-area: main;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 100%);
+    grid-template-areas: 'welcome' 'portfolio' 'contact';
+
+    section {
+      scroll-snap-align: start;
+    }
   }
 }
 
 //* laptop
 @media (min-width: $mediumBreakpoint) {
-  .wrapper {
-    .welcome-section,
-    .main-content,
-    .main-footer {
-      padding-bottom: 0;
+  .home-wrapper {
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    grid-template-areas:
+      'header navbar'
+      'main main';
+
+    .main-container {
+      scroll-snap-type: none;
+
+      section {
+        scroll-snap-align: none;
+      }
     }
   }
 }

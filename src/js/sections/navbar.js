@@ -1,16 +1,8 @@
-import { about } from './about';
+import { about } from '../components/about';
 
 //* Container
 const navbar = document.createElement('nav');
 navbar.classList.add('navbar');
-
-//* Heading
-const topLink = document.createElement('a');
-topLink.href = '#top';
-const heading1 = document.createElement('h1');
-heading1.textContent = 'Andrew Smith';
-topLink.appendChild(heading1);
-navbar.appendChild(topLink);
 
 //* Links
 const links = document.createElement('ul');
@@ -20,7 +12,7 @@ navbar.appendChild(links);
 //* Home
 const homeListItem = document.createElement('li');
 const homeLink = document.createElement('a');
-homeLink.href = '#top';
+homeLink.href = '#welcome';
 homeLink.textContent = 'Home';
 homeListItem.appendChild(homeLink);
 links.appendChild(homeListItem);
@@ -28,7 +20,7 @@ links.appendChild(homeListItem);
 //* About
 const aboutListItem = document.createElement('li');
 const aboutLink = document.createElement('a');
-aboutLink.href = '#top';
+aboutLink.href = '#welcome';
 aboutLink.textContent = 'About';
 
 const handleAboutOpen = () => {

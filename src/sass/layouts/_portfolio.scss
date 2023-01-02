@@ -1,9 +1,7 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.main-content {
-  min-height: 100vh;
+.portfolio {
+  grid-area: portfolio;
   background-color: $mainBackground;
-  // flex: 1;
-  // margin: 0 0;
 }

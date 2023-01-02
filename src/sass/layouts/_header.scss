@@ -1,8 +1,19 @@
-@use '../abstracts/fonts' as *;
+@use '../abstracts' as *;
 
-.main-header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  max-width: var(--page_width);
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  a > h1 {
+    .title {
+      font-size: 1.25rem;
+    }
+  }
+}
+@media (min-width: $mediumBreakpoint) {
+  .header {
+    margin-left: 1rem;
+    justify-content: flex-start;
+  }
 }
