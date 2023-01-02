@@ -8,8 +8,13 @@ const homeWrapper = document.createElement('div');
 homeWrapper.classList.add('home-wrapper');
 homeWrapper.appendChild(header);
 homeWrapper.appendChild(navbar);
-homeWrapper.appendChild(welcome);
-homeWrapper.appendChild(portfolio);
-homeWrapper.appendChild(contact);
+
+const mainContainer = document.createElement('main');
+mainContainer.classList.add('main-container');
+homeWrapper.appendChild(mainContainer);
+
+mainContainer.appendChild(welcome);
+mainContainer.appendChild(portfolio);
+mainContainer.appendChild(contact);
 
 export { homeWrapper };

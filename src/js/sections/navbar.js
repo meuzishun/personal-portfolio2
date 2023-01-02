@@ -12,7 +12,7 @@ navbar.appendChild(links);
 //* Home
 const homeListItem = document.createElement('li');
 const homeLink = document.createElement('a');
-homeLink.href = '#top';
+homeLink.href = '#welcome';
 homeLink.textContent = 'Home';
 homeListItem.appendChild(homeLink);
 links.appendChild(homeListItem);
@@ -20,7 +20,7 @@ links.appendChild(homeListItem);
 //* About
 const aboutListItem = document.createElement('li');
 const aboutLink = document.createElement('a');
-aboutLink.href = '#top';
+aboutLink.href = '#welcome';
 aboutLink.textContent = 'About';
 
 const handleAboutOpen = () => {
