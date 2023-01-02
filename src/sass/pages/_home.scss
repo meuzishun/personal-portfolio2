@@ -1,9 +1,6 @@
 @use '../abstracts' as *;
 
-$navbarHeight: 5rem;
-
 :root {
-  --header_height: 0;
   --page_width: 1440px;
 }
 
@@ -16,6 +13,8 @@ body {
 
 .home-wrapper {
   height: 100vh;
+  max-width: var(--page_width);
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
