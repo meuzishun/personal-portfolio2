@@ -13,12 +13,23 @@
   .icons-container {
     overflow: hidden;
     background-color: #000;
+    position: relative;
+    padding-bottom: 1rem;
 
     .tech-icons {
       width: 200%;
       display: flex;
       justify-content: space-around;
       animation: icon-carousel 10s linear infinite;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
     }
   }
 
