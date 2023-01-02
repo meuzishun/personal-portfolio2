@@ -1,14 +1,16 @@
 @use '../abstracts' as *;
 
+$navbarHeight: 5rem;
+
 :root {
-  --navbar_height: 0;
+  // $navbarHeight: 6rem;
   --header_height: 0;
   --page_width: 1440px;
 }
 
 html {
   scroll-behavior: smooth;
-  // scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -19,28 +21,65 @@ body {
 }
 
 .home-wrapper {
-  position: relative;
-  min-height: 100vh;
-  max-width: var(--page_width);
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto auto repeat(100vh, 3);
+  grid-template-areas:
+    'header'
+    'navbar'
+    'welcome'
+    'portfolio'
+    'contact';
+  // position: relative;
+  // min-height: 100vh;
+  // max-width: var(--page_width);
+  // margin: 0 auto;
 
   //* mobile
   .welcome,
   .portfolio,
   .contact {
-    padding-top: var(--navbar_height);
-    padding-bottom: var(--navbar_height);
+    // padding-top: var(--navbar_height);
+    // padding-bottom: var(--navbar_height);
     // scroll-snap-align: start;
+  }
+
+  .header,
+  section:not(.welcome) {
+    scroll-snap-align: start;
+  }
+
+  section:not(.welcome) {
+    padding: 0 0 5rem;
   }
 }
 
 //* laptop
 @media (min-width: $mediumBreakpoint) {
+  //   .home-wrapper {
+  //     .welcome,
+  //     .portfolio,
+  //     .contact {
+  //       padding-bottom: 0;
+  //     }
+  //   }
   .home-wrapper {
-    .welcome,
-    .portfolio,
-    .contact {
-      padding-bottom: 0;
+    .header,
+    section:not(.welcome) {
+      scroll-snap-align: none;
     }
+
+    section:not(.welcome) {
+      padding: 5rem 0 0;
+    }
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: $navbarHeight repeat(100vh, 3);
+    grid-template-areas:
+      'header navbar'
+      'welcome welcome'
+      'portfolio portfolio'
+      'contact contact';
   }
 }

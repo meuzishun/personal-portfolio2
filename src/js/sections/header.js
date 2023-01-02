@@ -3,9 +3,15 @@ header.classList.add('header');
 
 const topLink = document.createElement('a');
 topLink.href = '#top';
-const heading1 = document.createElement('h1');
-heading1.textContent = 'Andrew Smith, Website Developer';
-topLink.appendChild(heading1);
 header.appendChild(topLink);
+
+const heading1 = document.createElement('h1');
+heading1.textContent = 'Andrew Smith ';
+topLink.appendChild(heading1);
+
+const title = document.createElement('span');
+title.classList.add('title');
+title.textContent = '(Noob Web Dev)';
+heading1.appendChild(title);
 
 export { header };

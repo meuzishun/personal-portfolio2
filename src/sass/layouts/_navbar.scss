@@ -1,27 +1,30 @@
 @use '../abstracts' as *;
-
+@use '../pages' as *;
 .navbar {
+  grid-area: navbar;
   background-image: linear-gradient(#000, rgba(0, 0, 0, 0.5));
-  position: fixed;
-  right: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   color: #fff;
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  height: $navbarHeight;
+  z-index: 2;
 
   .nav-links {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
+    width: 100%;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000);
+    align-items: center;
+    justify-content: space-around;
     gap: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000);
 
     li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
       a {
         cursor: pointer;
         user-select: none;
@@ -38,11 +41,16 @@
 
 @media (min-width: $mediumBreakpoint) {
   .navbar {
+    // position: fixed;
+    bottom: auto;
+    // right: 0;
+    // width: 35%;
+    // width: auto;
     .nav-links {
-      position: static;
-      width: auto;
-      background-image: none;
-      margin-right: 1rem;
+      // width: auto;
+      // background-image: none;
+      // margin-right: 1rem;
+      justify-content: flex-end;
     }
   }
 }

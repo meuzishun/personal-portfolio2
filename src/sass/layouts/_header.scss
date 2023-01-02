@@ -1,12 +1,26 @@
-@use '../abstracts/fonts' as *;
+@use '../abstracts' as *;
 
 .header {
-  position: fixed;
-  top: 0;
-  max-width: var(--page_width);
-  background-image: linear-gradient(#000, rgba(0, 0, 0, 0.5));
+  grid-area: header;
+  // position: fixed;
+  // top: 0;
+  // width: 100vw;
+  // max-width: var(--page_width);
+  // background-image: linear-gradient(#000, rgba(0, 0, 0, 0.5));
+  z-index: 3;
 
   a > h1 {
     margin: 1rem;
+
+    .title {
+      font-size: 1.25rem;
+    }
+  }
+}
+@media (min-width: $mediumBreakpoint) {
+  .header {
+    // position: fixed;
+    // width: 65%;
+    width: auto;
   }
 }

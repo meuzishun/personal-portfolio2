@@ -2,6 +2,7 @@
 @use '../base' as *;
 
 .portfolio {
+  grid-area: portfolio;
   min-height: 100vh;
   background-color: $mainBackground;
   flex: 1;
