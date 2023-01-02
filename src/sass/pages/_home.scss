@@ -48,7 +48,7 @@ body {
 //* laptop
 @media (min-width: $mediumBreakpoint) {
   .home-wrapper {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     justify-content: space-between;
     grid-template-areas:
       'header navbar'

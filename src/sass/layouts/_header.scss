@@ -13,6 +13,7 @@
 }
 @media (min-width: $mediumBreakpoint) {
   .header {
+    margin-left: 1rem;
     justify-content: flex-start;
   }
 }
