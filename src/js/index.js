@@ -10,5 +10,5 @@ const setHeaderMargin = () => {
   styleSheet.style.setProperty('--navbar_height', `${navbarHeight}px`);
 };
 
-window.addEventListener('load', setHeaderMargin);
-window.addEventListener('resize', setHeaderMargin);
+// window.addEventListener('load', setHeaderMargin);
+// window.addEventListener('resize', setHeaderMargin);

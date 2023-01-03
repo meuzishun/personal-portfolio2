@@ -20,6 +20,7 @@
   .project-image {
     object-fit: contain;
     width: 100%;
+    height: auto;
     border-radius: 0.25rem;
   }
 
@@ -55,8 +56,22 @@
 
 @media (min-width: $mediumBreakpoint) {
   .project-card {
-    height: auto;
+    .project-title {
+      font-size: 1.5rem;
+    }
+
     .project-image {
+      height: 150px;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .project-description {
+      font-size: 1rem;
+    }
+
+    .project-links {
+      font-size: 1rem;
     }
   }
 }
