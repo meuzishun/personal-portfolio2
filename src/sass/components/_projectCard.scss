@@ -1,28 +1,61 @@
+@use '../abstracts' as *;
 @use '../pages' as *;
 
 .project-card {
-  // height: calc(100vh - (var(--navbar_height) * 2));
-  position: absolute;
   height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
   border: 1px solid black;
-  // background-image: url('../assets/images/piano-image.jpg');
-  // background-size: contain;
-  // background-repeat: no-repeat;
-  // background-position: 40% 50%;
+  border-radius: 10px;
+  padding: 2rem;
+  background: rgb(48, 48, 48);
+  color: #fff;
 
   .project-title {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
   }
 
   .project-links {
-    flex-grow: 4;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    a {
+      color: #fff;
+      &:hover,
+      &:active,
+      &:visited {
+        color: #fff;
+      }
+
+      border: 1px solid rgba(0, 0, 0, 0);
+
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
     .project-live-link {
     }
 
     .project-repo-link {
+    }
+  }
+}
+
+@media (min-width: $mediumBreakpoint) {
+  .project-card {
+    .project-image {
+      width: auto;
     }
   }
 }
