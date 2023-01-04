@@ -4,13 +4,14 @@
 .project-card {
   height: 100%;
   display: grid;
-  grid-gap: 3rem;
+  // grid-gap: 5vh;
+  // justify-items: space-evenly;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid rgb(48, 48, 48);
+  border-radius: 0.5rem;
   padding: 2rem;
-  background: rgb(48, 48, 48);
+  background: rgb(20, 20, 20);
   color: #fff;
 
   .project-title {
@@ -46,11 +47,6 @@
         border-bottom: 1px solid #fff;
       }
     }
-    .project-live-link {
-    }
-
-    .project-repo-link {
-    }
   }
 }
 
@@ -61,7 +57,7 @@
     }
 
     .project-image {
-      height: 150px;
+      // height: auto;
       object-fit: cover;
       object-position: center center;
     }

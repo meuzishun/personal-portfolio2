@@ -2,6 +2,7 @@
 @use '../base' as *;
 
 .portfolio {
+  padding: 0;
   grid-area: portfolio;
   background-color: #000;
   overflow-x: scroll;
@@ -19,6 +20,7 @@
 
 @media (min-width: $mediumBreakpoint) {
   .portfolio {
+    padding: 1rem;
     scroll-snap-type: none;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     // grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
