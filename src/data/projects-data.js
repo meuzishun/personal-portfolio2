@@ -38,49 +38,55 @@ const projectsData = [
   {
     title: "Where's Waldo",
     imageFile: images['wheres-waldo-image.jpg'],
-    description: '',
+    description:
+      "A digital version of the popular children's book series. Find specific details as quickly as possible while the app keeps track of the player's time and potentially ranking them on a leader-board",
     link: 'https://whereswaldo-ea81f.web.app/',
     repository: 'https://github.com/meuzishun/wheres-waldo',
   },
   {
     title: 'Weather App',
     imageFile: images['weather-image.jpg'],
-    description: '',
+    description:
+      'A basic weather app which uses the open weather api and allows users to view the current weather conditions and forecast for a specific location as well as choosing the units of measurement (e.g. Fahrenheit or Celsius)',
     link: 'https://meuzishun.github.io/weather-app2/',
     repository: 'https://github.com/meuzishun/weather-app2',
   },
   {
     title: 'Restaurant Landing Page',
     imageFile: images['restaurant-image.jpg'],
-    description: '',
+    description: 'A slightly satirical landing page for a restaurant.',
     link: 'https://meuzishun.github.io/restaurant-page/',
     repository: 'https://github.com/meuzishun/restaurant-page',
   },
   {
     title: 'Tic-Tac-Toe',
     imageFile: images['tic-tac-toe-image.jpg'],
-    description: '',
+    description:
+      'A digital version of the classic game. The app allows two players to play against each other as well as the user plays against an AI opponent.',
     link: 'https://meuzishun.github.io/tic-tac-toe/',
     repository: 'https://github.com/meuzishun/tic-tac-toe',
   },
   {
     title: 'Shopping Cart',
     imageFile: images['shop-image.jpg'],
-    description: '',
+    description:
+      'A simple shopping cart application which uses React JS and react-router-dom.',
     link: 'https://meuzishun.github.io/shopping-cart/',
     repository: 'https://github.com/meuzishun/shopping-cart',
   },
   {
     title: 'Memory Card',
     imageFile: images['card-game-image.jpg'],
-    description: '',
+    description:
+      'A card game in which the player tries to choose as many unique cards as he can without repeating.',
     link: 'https://meuzishun.github.io/memory_card/',
     repository: 'https://github.com/meuzishun/memory_card',
   },
   {
     title: 'CV Creator',
     imageFile: images['cv-image.jpg'],
-    description: '',
+    description:
+      'A basic app which allows the user to create their own CV using a template',
     link: 'https://meuzishun.github.io/cv-project/',
     repository: 'https://github.com/meuzishun/cv-project',
   },
