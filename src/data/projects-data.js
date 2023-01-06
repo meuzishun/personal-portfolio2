@@ -32,7 +32,7 @@ const projectsData = [
     imageFile: images['social-media.jpg'],
     description:
       'A replication of Twitter/Facebook/any generic social media app. Created for partially fulfillment of the curriculum of The Odin Project.',
-    link: 'https://meuzishun.github.io/login',
+    link: 'https://meuzishun.github.io/social-media-app/',
     repository: 'https://github.com/meuzishun/social-media-app',
   },
   {

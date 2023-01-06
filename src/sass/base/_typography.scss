@@ -1,24 +1,31 @@
 @use '../abstracts' as *;
 
+$headerSidePadding: 2rem;
+$headerTopBottomPadding: 1rem;
+
 h1 {
-  font-family: $fontStack1;
-  font-weight: 300;
-  color: $lightFontColor;
-  font-size: $heading1Size;
+  @include heading-mixin(clamp(1.75rem, 4vw, 3rem));
 }
 
 h2 {
-  font-family: $fontStack1;
-  font-weight: 300;
-  font-size: $heading2Size;
+  @include heading-mixin(clamp(1.5rem, 3vw, 2.5rem));
+}
+
+h3 {
+  @include heading-mixin(clamp(1.5rem, 2vw, 2rem));
 }
 
 p {
   font-family: $fontStack2;
-  font-size: $paraSize;
+  font-size: clamp(1rem, 1.75vw, 1.25rem);
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+  font-family: $fontStack2;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.small {
+  font-family: $fontStack2;
+  font-size: clamp(0.8rem, 1.25vw, 1.15rem);
 }

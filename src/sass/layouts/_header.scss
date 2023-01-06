@@ -1,19 +1,14 @@
 @use '../abstracts' as *;
+@use '../base' as *;
 
 .header {
-  display: flex;
-  justify-content: center;
   padding: 1rem;
-
-  a > h1 {
-    .title {
-      font-size: 1.25rem;
-    }
-  }
+  text-align: center;
 }
+
 @media (min-width: $mediumBreakpoint) {
   .header {
+    text-align: left;
     margin-left: 1rem;
-    justify-content: flex-start;
   }
 }

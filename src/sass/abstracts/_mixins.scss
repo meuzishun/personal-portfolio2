@@ -1,3 +1,5 @@
+@use './fonts' as *;
+@use './colors' as *;
 @use './functions' as *;
 
 @mixin set-background($color) {
@@ -9,4 +11,11 @@
   svg path + path {
     fill: $color;
   }
+}
+
+@mixin heading-mixin($fontSize) {
+  font-family: $fontStack1;
+  font-weight: 300;
+  color: $lightFontColor;
+  font-size: $fontSize;
 }

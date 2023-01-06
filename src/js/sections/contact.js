@@ -13,7 +13,6 @@ heading2.textContent = 'Contact me';
 callToAction.appendChild(heading2);
 
 const blurb = document.createElement('p');
-blurb.classList.add('call-to-action');
 blurb.textContent =
   'If you enjoy my work and would like to discuss potentially working together, please feel free to contact me.';
 callToAction.appendChild(blurb);
