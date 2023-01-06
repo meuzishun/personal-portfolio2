@@ -16,6 +16,13 @@
 @mixin heading-mixin($fontSize) {
   font-family: $fontStack1;
   font-weight: 300;
-  color: $lightFontColor;
+  color: inherit;
+  font-size: $fontSize;
+}
+
+@mixin text-mixin($fontSize) {
+  font-family: $fontStack2;
+  font-weight: 300;
+  color: inherit;
   font-size: $fontSize;
 }

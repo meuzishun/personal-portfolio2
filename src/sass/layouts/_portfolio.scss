@@ -2,9 +2,7 @@
 @use '../base' as *;
 
 .portfolio {
-  padding: 0;
   grid-area: portfolio;
-  background-color: #000;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 

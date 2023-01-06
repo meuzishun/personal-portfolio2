@@ -8,11 +8,10 @@
   // justify-items: space-evenly;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto;
-  border: 1px solid rgb(48, 48, 48);
+  // border: 1px solid rgb(48, 48, 48);
   border-radius: 0.5rem;
   padding: 2rem;
-  background: rgb(20, 20, 20);
-  color: #fff;
+  @include set-background(rgb(45, 45, 45));
 
   .project-image {
     object-fit: cover;
@@ -24,21 +23,6 @@
   .project-links {
     display: flex;
     justify-content: space-evenly;
-
-    a {
-      color: #fff;
-      &:hover,
-      &:active,
-      &:visited {
-        color: #fff;
-      }
-
-      border: 1px solid rgba(0, 0, 0, 0);
-
-      &:hover {
-        border-bottom: 1px solid #fff;
-      }
-    }
   }
 }
 

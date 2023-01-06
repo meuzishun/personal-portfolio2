@@ -16,16 +16,20 @@ h3 {
 }
 
 p {
-  font-family: $fontStack2;
-  font-size: clamp(1rem, 1.75vw, 1.25rem);
+  @include text-mixin(clamp(1rem, 1.75vw, 1.25rem));
 }
 
 a {
-  font-family: $fontStack2;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  @include text-mixin(clamp(1.2rem, 2vw, 1.5rem));
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+
+  &:hover {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 .small {
-  font-family: $fontStack2;
-  font-size: clamp(0.8rem, 1.25vw, 1.15rem);
+  @include text-mixin(clamp(0.8rem, 1.25vw, 1.15rem));
 }
