@@ -8,7 +8,6 @@
 
   .icons-container {
     overflow: hidden;
-    // background-color: #000;
     position: relative;
     padding: 1rem 0;
 
@@ -42,7 +41,6 @@
 }
 
 .showing {
-  display: block;
   animation: showAbout 500ms ease-in-out 0ms 1 forwards;
 }
 
@@ -56,5 +54,5 @@
 }
 
 .hidden {
-  display: none;
+  transform: translateY(-100%);
 }

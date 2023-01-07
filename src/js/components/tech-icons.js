@@ -39,8 +39,4 @@ for (let i = 0, l = techIconsFile.length * 2; i < l; i++) {
   icons.appendChild(icon);
 }
 
-const overlay = document.createElement('div');
-overlay.classList.add('overlay');
-iconsContainer.appendChild(overlay);
-
 export { iconsContainer };
