@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 @use '../pages' as *;
 .navbar {
+  align-self: center;
   .nav-links {
     width: 100%;
     padding: 2rem 1rem;

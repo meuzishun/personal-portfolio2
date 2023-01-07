@@ -10,27 +10,4 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 46% 80%;
-
-  .icons-container {
-    overflow: hidden;
-    background-color: #000;
-    position: relative;
-    padding-bottom: 1rem;
-
-    .tech-icons {
-      width: 200%;
-      display: flex;
-      justify-content: space-around;
-      animation: icon-carousel 30s linear infinite;
-    }
-  }
-
-  @keyframes icon-carousel {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
 }
