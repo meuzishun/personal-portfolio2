@@ -7,6 +7,8 @@ import sassIconFile from '../../assets/icons/tech/sass-original.svg';
 import reactIconFile from '../../assets/icons/tech/react-original.svg';
 import nodejsIconFile from '../../assets/icons/tech/nodejs-original.svg';
 import jestIconFile from '../../assets/icons/tech/jest-plain.svg';
+import webpackIconFile from '../../assets/icons/tech/webpack.svg';
+import firebaseIconFile from '../../assets/icons/tech/firebase.svg';
 
 const techIconsFile = [
   htmlIconFile,
@@ -18,6 +20,8 @@ const techIconsFile = [
   reactIconFile,
   nodejsIconFile,
   jestIconFile,
+  webpackIconFile,
+  firebaseIconFile,
 ];
 
 const iconsContainer = document.createElement('div');
