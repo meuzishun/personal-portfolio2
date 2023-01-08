@@ -2,7 +2,7 @@
 @use '../base' as *;
 
 .header {
-  // padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -10,5 +10,6 @@
   .header {
     text-align: left;
     margin-left: 1rem;
+    padding: 0;
   }
 }
