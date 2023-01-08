@@ -39,7 +39,7 @@ const projectsData = [
     title: "Where's Waldo",
     imageFile: images['waldo.jpg'],
     description:
-      "A digital version of the popular children's book series. Find specific details as quickly as possible while the app keeps track of the player's time and potentially ranking them on a leader-board",
+      "A digital version of the popular children's book series. The app keeps track of the player's time and potentially ranking them on a leader-board",
     link: 'https://whereswaldo-ea81f.web.app/',
     repository: 'https://github.com/meuzishun/wheres-waldo',
   },
@@ -47,7 +47,7 @@ const projectsData = [
     title: 'Weather App',
     imageFile: images['weather.jpg'],
     description:
-      'A basic weather app which uses the open weather api and allows users to view the current weather conditions and forecast for a specific location as well as choosing the units of measurement (e.g. Fahrenheit or Celsius)',
+      'A basic weather app which uses the open weather api and allows users to view weather conditions for a specific location as well as choosing the units of measurement.',
     link: 'https://meuzishun.github.io/weather-app2/',
     repository: 'https://github.com/meuzishun/weather-app2',
   },
