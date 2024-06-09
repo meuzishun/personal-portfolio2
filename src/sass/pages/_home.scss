@@ -11,6 +11,7 @@ body {
 
 .home-wrapper {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   max-width: var(--page_width);
   margin: 0 auto;
   display: grid;
