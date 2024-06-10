@@ -27,6 +27,12 @@ var projectsData = [{
   link: 'https://dev.meuzishun.com/',
   repository: 'https://github.com/meuzishun'
 }, {
+  title: "You're Gonna Make Me Blog",
+  imageFile: images['blog-image.jpg'],
+  description: 'A full-stack blogging app. Created for partially fulfillment of the curriculum of The Odin Project.',
+  link: 'https://meuzishun.github.io/blog-client/',
+  repository: 'https://github.com/meuzishun/blog-client'
+}, {
   title: 'Battleship',
   imageFile: images['battleship.jpg'],
   description: 'A take on the classic board game of the same name. Created for partially fulfillment of the curriculum of The Odin Project.',
@@ -1108,6 +1114,7 @@ module.exports = styleTagTransform;
 
 var map = {
 	"./battleship.jpg": "./src/assets/images/projects/battleship.jpg",
+	"./blog-image.jpg": "./src/assets/images/projects/blog-image.jpg",
 	"./cardGame.jpg": "./src/assets/images/projects/cardGame.jpg",
 	"./cv.jpg": "./src/assets/images/projects/cv.jpg",
 	"./playerPiano.jpg": "./src/assets/images/projects/playerPiano.jpg",
@@ -1336,6 +1343,17 @@ module.exports = __webpack_require__.p + "desk-image.jpg";
 
 "use strict";
 module.exports = __webpack_require__.p + "battleship.jpg";
+
+/***/ }),
+
+/***/ "./src/assets/images/projects/blog-image.jpg":
+/*!***************************************************!*\
+  !*** ./src/assets/images/projects/blog-image.jpg ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "blog-image.jpg";
 
 /***/ }),
 
@@ -1605,4 +1623,4 @@ window.addEventListener('resize', setMobileHeight);
 
 /******/ })()
 ;
-//# sourceMappingURL=bundlea8918ab4eabbe6437afd.js.map
+//# sourceMappingURL=bundle5c43a753316155e5b0db.js.map
