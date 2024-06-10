@@ -20,6 +20,14 @@ const projectsData = [
     repository: 'https://github.com/meuzishun',
   },
   {
+    title: "You're Gonna Make Me Blog",
+    imageFile: images['blog-image.jpg'],
+    description:
+      'A full-stack blogging app. Created for partially fulfillment of the curriculum of The Odin Project.',
+    link: 'https://meuzishun.github.io/blog-client/',
+    repository: 'https://github.com/meuzishun/blog-client',
+  },
+  {
     title: 'Battleship',
     imageFile: images['battleship.jpg'],
     description:
